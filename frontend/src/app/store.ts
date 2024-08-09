@@ -1,8 +1,9 @@
 import {configureStore} from '@reduxjs/toolkit';
+import {codingReducer} from '../features/codingSlice';
 
 export const store = configureStore({
   reducer: {
-    // encoding: encodingReducer,
+    coding: codingReducer,
   },
 });
 
