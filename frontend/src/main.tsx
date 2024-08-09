@@ -5,13 +5,11 @@ import {Provider} from 'react-redux';
 import 'react-toastify/dist/ReactToastify.min.css';
 import {store} from './app/store';
 import {ToastContainer} from 'react-toastify';
-import {CssBaseline} from '@mui/material';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <Provider store={store}>
       <ToastContainer position="bottom-right" />
-      <CssBaseline />
       <App />
     </Provider>,
   </StrictMode>,
